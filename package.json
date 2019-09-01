@@ -3,6 +3,8 @@
     "demo": "webpack-dev-server --open"
   },
   "dependencies": {
+    "immer": "3.2.0",
+    "pullstate": "1.6.1",
     "react": "16.9.0",
     "react-dom": "16.9.0"
   },
