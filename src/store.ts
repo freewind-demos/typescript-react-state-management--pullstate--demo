@@ -12,6 +12,10 @@ export function getState<S>(getSubState: (store: StoreType) => S) {
   return useStoreState(MyStore, getSubState)
 }
 
+export function getStore(): StoreType {
+  return getState(it => it);
+}
+
 export function updateStore(setSubState: (store: StoreType) => void) {
   // Notice
   // it's important to wrap `setSubState` to ignore its return value

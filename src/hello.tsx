@@ -1,8 +1,8 @@
 import React from 'react'
-import {getState, updateStore} from './store';
+import {updateStore, getStore} from './store';
 
 export default function Hello() {
-  const username = getState(it => it.username);
+  const {username} = getStore();
   return <div>
     <h1>Hello {username}</h1>
     <hr/>
