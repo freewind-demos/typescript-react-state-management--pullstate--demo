@@ -1,6 +1,19 @@
 TypeScript React State Management "pullstate" Demo
 ==================================================
 
+Update:
+
+Use the latest pullstate 1.11.x, there is an error about `Proxy`, which doesn't work in IE 11.
+
+I tried to use some polyfill like:
+- https://github.com/GoogleChrome/proxy-polyfill
+- https://www.npmjs.com/package/es6-proxy-polyfill
+But can't find the correct way to make it work.
+
+PS: try importing them in `src/entry.tsx`
+
+---
+
 比Redux简单太多了，而且在修改state的时候，可以使用直接修改的方式（借助于immer这个项目）。
 
 注意：
